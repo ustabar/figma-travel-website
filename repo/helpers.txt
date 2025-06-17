@@ -1,0 +1,2 @@
+# Figma Access Token removed for security
+# Replace with your own Figma Personal Access Token when needed

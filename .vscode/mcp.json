@@ -1,0 +1,27 @@
+{
+    "inputs": [
+        {
+            "id": "FIGMA_API_KEY",
+            "type": "promptString",
+            "description": "Enter your Figma API key",
+            "password": true
+        }
+    ],
+    "servers": {
+        "Figma-MCP": {
+            "command": "npx",
+            "args": [
+                "-y", 
+                "figma-developer-mcp", 
+                "--stdio"
+            ],
+            "env": {
+                "FIGMA_API_KEY": "${input:FIGMA_API_KEY}"
+            }
+        },
+        "github-remote": {
+            "type": "http",
+            "url": "https://api.githubcopilot.com/mcp/"
+        }
+    }
+}
