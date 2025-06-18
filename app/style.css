@@ -1167,17 +1167,6 @@ h6 {
   top: 10px;
   right: 20px;
 }
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @media (max-width: 550px) {
   .notification {
     position: fixed;
@@ -1211,8 +1200,8 @@ h6 {
     top: 10px;
     right: 20px;
   }
-
-  @keyframes slideInRight {
+}
+@keyframes slideInRight {
     from {
       transform: translateX(100%);
       opacity: 0;
@@ -1222,4 +1211,3 @@ h6 {
       opacity: 1;
     }
   }
-}
