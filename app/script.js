@@ -356,12 +356,13 @@ function showWelcomeNotification() {
         }, 6000);
 
         // Manual dismissal
-        document
-          .querySelector(".notification-close")
-          .addEventListener("click", () => {
+        const closeButton = document.querySelector(".notification-close");
+        if (closeButton) {
+          closeButton.addEventListener("click", () => {
             notification.classList.add("hidden");
             clearTimeout(autoDismiss);
           });
+        }
 
         localStorage.setItem("hasVisitedJadoo", "true");
       }, 2500);
