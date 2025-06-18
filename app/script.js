@@ -319,4 +319,65 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Welcome Notification System
+function showWelcomeNotification() {
+    // Check if user has visited before
+    const hasVisited = localStorage.getItem('hasVisitedJadoo');
+    
+    if (!hasVisited) {
+        setTimeout(() => {
+            const notification = document.getElementById('welcome-notification');
+            if (notification) {
+                notification.classList.remove('hidden');
+                
+                // Auto-dismiss after 6 seconds
+                const autoDismissTimer = setTimeout(() => {
+                    hideNotification();
+                }, 6000);
+                
+                // Add click handler for close button
+                const closeBtn = notification.querySelector('.notification-close');
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', () => {
+                        clearTimeout(autoDismissTimer);
+                        hideNotification();
+                    });
+                }
+                
+                // Add keyboard support for close button
+                if (closeBtn) {
+                    closeBtn.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            clearTimeout(autoDismissTimer);
+                            hideNotification();
+                        }
+                    });
+                }
+                
+                // Mark as visited
+                localStorage.setItem('hasVisitedJadoo', 'true');
+            }
+        }, 2500); // Show after 2.5 seconds
+    }
+}
+
+function hideNotification() {
+    const notification = document.getElementById('welcome-notification');
+    if (notification && !notification.classList.contains('hidden')) {
+        // Add exit animation
+        notification.style.animation = 'slideOutRight 0.3s ease-in forwards';
+        
+        setTimeout(() => {
+            notification.classList.add('hidden');
+            notification.style.animation = '';
+        }, 300);
+    }
+}
+
+// Initialize welcome notification when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    showWelcomeNotification();
+});
+
 console.log('🛫 Jadoo Travel Website loaded successfully!');
