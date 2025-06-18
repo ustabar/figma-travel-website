@@ -1,2 +1,5 @@
 # Figma Access Token removed for security
 # Replace with your own Figma Personal Access Token when needed
+
+# GitHub MCP Server
+# https://github.com/github/github-mcp-server
