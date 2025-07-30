@@ -1,3 +1,9 @@
+/* Spiral Shape for Destination Card */
+.spiral-shape {
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.7;
+}
 /* CSS Reset and Base Styles */
 * {
     margin: 0;

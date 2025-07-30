@@ -1,5 +1,13 @@
 create a complete html5, css, js and images using this figma design
-Figma Design URL: https://www.figma.com/design/qfNElCzEVkf4LlaBZPnqS0/Travel-Website-Landing-Page--Community-?node-id=125-2847&t=zKdMH5JRUBV9KM4T-4
+Figma Design URL: 
+https://www.figma.com/design/qfNElCzEVkf4LlaBZPnqS0/Travel-Website-Landing-Page--Community-?node-id=125-2847&t=zKdMH5JRUBV9KM4T-4
+into specific folder.
+Put images in the images folder. If you need additional images,
+use https://unsplash.com/ or https://www.pexels.com/ to find suitable images.
+
+create a complete html5, css, js and images using this figma design
+Figma Design URL: 
+https://www.figma.com/design/w3hVPjkEiFx8UV8QFGBJIK/Travel-Website-Landing-Page--Community-?node-id=125-2846&t=gYpIRn0aaBeERVbC-4
 into specific folder.
 Put images in the images folder. If you need additional images,
 use https://unsplash.com/ or https://www.pexels.com/ to find suitable images.

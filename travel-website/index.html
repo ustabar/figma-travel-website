@@ -3,54 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadoo - Travel Website</title>
+    <title>Jadoo - Travel & Adventure</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Volkhov:wght@400;700&family=Google+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header Navigation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Website Landing Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <span class="logo-text">Jadoo</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#hotels">Hotels</a></li>
-                    <li><a href="#flights">Flights</a></li>
-                    <li><a href="#bookings">Bookings</a></li>
-                    <li><a href="#login">Login</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <select class="language-select">
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                        <option value="fr">FR</option>
-                    </select>
-                    <button class="signup-btn">Sign up</button>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </div>
+      <div class="logo">
+        <img src="images/logo1.png" alt="Travel Logo"/>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#book" class="btn-primary">Book Now</a>
     </nav>
+  </header>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Explore the World with Us</h1>
+      <p>Discover amazing places at exclusive deals. Your adventure starts here.</p>
+      <a href="#book" class="btn-primary">Get Started</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero-traveller.jpg" alt="Traveller"/>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="images/service1.jpg" alt="Flight Booking"/>
+        <h3>Flight Booking</h3>
+        <p>Book flights to your favorite destinations at the best prices.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service2.jpg" alt="Hotel Reservation"/>
+        <h3>Hotel Reservation</h3>
+        <p>Find and reserve hotels that suit your needs and budget.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/service3.jpg" alt="Tour Packages"/>
+        <h3>Tour Packages</h3>
+        <p>Choose from a variety of curated tour packages for a memorable trip.</p>
+      </div>
+    </div>
+  </section>
+  <section class="destinations" id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-cards">
+      <div class="card">
+        <img src="images/destination-europe.jpg" alt="Europe"/>
+        <h3>Europe</h3>
+        <p>Experience the beauty of Europe’s cities and landscapes.</p>
+      </div>
+      <div class="card">
+        <img src="images/destination-london.jpg" alt="London"/>
+        <h3>London</h3>
+        <p>Visit the iconic landmarks and vibrant culture of London.</p>
+      </div>
+      <div class="card">
+        <img src="images/destination-rome.jpg" alt="Rome"/>
+        <h3>Rome</h3>
+        <p>Explore the ancient wonders and delicious cuisine of Rome.</p>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Travelers Say</h2>
+    <div class="testimonial-card">
+      <img src="images/testimonial-user.jpg" alt="User"/>
+      <blockquote>
+        “The best travel experience I’ve ever had! Everything was perfectly organized.”
+      </blockquote>
+      <cite>- Alex Johnson</cite>
+    </div>
+  </section>
+  <section class="subscribe" id="subscribe">
+    <h2>Subscribe for Updates</h2>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+  </section>
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/logo1.png" alt="Travel Logo"/>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="images/logo2.png" alt="Facebook"/></a>
+        <a href="#"><img src="images/logo3.png" alt="Twitter"/></a>
+        <a href="#"><img src="images/logo4.png" alt="Instagram"/></a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Travel Agency. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-decoration">
             <div class="decoration-circle"></div>
+            <svg class="decoration-shape" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="#FFF1DA" stroke-width="2" opacity="0.3"/>
+                <circle cx="100" cy="100" r="60" fill="none" stroke="#FFF1DA" stroke-width="2" opacity="0.5"/>
+                <circle cx="100" cy="100" r="40" fill="none" stroke="#FFF1DA" stroke-width="2" opacity="0.7"/>
+            </svg>
         </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="hero-tagline">Best Destinations around the world</p>
+                    <p class="hero-tag">Best Destinations around the world</p>
                     <h1 class="hero-title">Travel, enjoy and live a new and full life</h1>
                     <p class="hero-description">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                    
                     <div class="hero-actions">
-                        <button class="cta-btn">Find out more</button>
+                        <button class="btn-primary">Find out more</button>
                         <div class="play-demo">
                             <div class="play-btn">
                                 <i class="fas fa-play"></i>
@@ -60,12 +151,14 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images/hero-traveller.jpg" alt="Traveller" class="traveller-img">
-                    <div class="plane-animation plane-1">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <div class="plane-animation plane-2">
-                        <i class="fas fa-plane"></i>
+                    <img src="images/hero-traveller.jpg" alt="Happy traveller">
+                    <div class="floating-planes">
+                        <div class="plane plane-1">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="plane plane-2">
+                            <i class="fas fa-plane"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,34 +169,34 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <p class="section-category">CATEGORY</p>
+                <p class="section-category">Category</p>
                 <h2 class="section-title">We Offer Best Services</h2>
             </div>
             <div class="services-grid">
-                <div class="service-card active">
-                    <div class="service-icon orange">
+                <div class="service-card">
+                    <div class="service-icon weather">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Calculated Weather</h3>
+                    <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+                </div>
+                <div class="service-card best-flights">
+                    <div class="service-icon flights">
                         <i class="fas fa-plane"></i>
                     </div>
                     <h3>Best Flights</h3>
                     <p>Engrossed listening. Park gate sell they west hard for the.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon blue">
-                        <i class="fas fa-satellite-dish"></i>
-                    </div>
-                    <h3>Calculated Weather</h3>
-                    <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon pink">
+                    <div class="service-icon events">
                         <i class="fas fa-microphone"></i>
                     </div>
                     <h3>Local Events</h3>
                     <p>Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon green">
-                        <i class="fas fa-cogs"></i>
+                    <div class="service-icon customization">
+                        <i class="fas fa-cog"></i>
                     </div>
                     <h3>Customization</h3>
                     <p>We deliver outsourced aviation services for military customers</p>
@@ -127,7 +220,7 @@
                     <div class="destination-info">
                         <div class="destination-header">
                             <span class="destination-name">Rome, Italy</span>
-                            <span class="destination-price">$5,42k</span>
+                            <span class="destination-price">$5.42k</span>
                         </div>
                         <div class="destination-details">
                             <i class="fas fa-location-dot"></i>
@@ -150,15 +243,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="destination-card">
-                    <div class="destination-image" style="position:relative;">
+                <div class="destination-card europe-special">
+                    <div class="destination-image">
                         <img src="images/destination-europe.jpg" alt="Full Europe">
-                        <!-- Spiral SVG shape overlay -->
-                        <svg class="spiral-shape" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute; right:-30px; top:50%; transform:translateY(-50%); z-index:2; pointer-events:none;">
-                          <path d="M60,60 m0,-50 a50,50 0 1,1 0,100 a50,50 0 1,1 0,-100" stroke="#E5E5E5" stroke-width="2" fill="none"/>
-                          <path d="M60,60 m0,-40 a40,40 0 1,1 0,80 a40,40 0 1,1 0,-80" stroke="#E5E5E5" stroke-width="2" fill="none"/>
-                          <path d="M60,60 m0,-30 a30,30 0 1,1 0,60 a30,30 0 1,1 0,-60" stroke="#E5E5E5" stroke-width="2" fill="none"/>
-                        </svg>
+                        <div class="spiral-decoration">
+                            <svg width="120" height="120" viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="#E5E5E5" stroke-width="2" opacity="0.6"/>
+                                <circle cx="60" cy="60" r="40" fill="none" stroke="#E5E5E5" stroke-width="2" opacity="0.7"/>
+                                <circle cx="60" cy="60" r="30" fill="none" stroke="#E5E5E5" stroke-width="2" opacity="0.8"/>
+                                <circle cx="60" cy="60" r="20" fill="none" stroke="#E5E5E5" stroke-width="2" opacity="0.9"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="destination-info">
                         <div class="destination-header">
@@ -176,7 +271,7 @@
     </section>
 
     <!-- Book Trip Section -->
-    <section class="book-trip" id="booking">
+    <section class="book-trip" id="bookings">
         <div class="container">
             <div class="book-trip-content">
                 <div class="book-trip-text">
@@ -184,7 +279,7 @@
                     <h2 class="section-title">Book your next trip in 3 easy steps</h2>
                     <div class="steps">
                         <div class="step">
-                            <div class="step-icon yellow">
+                            <div class="step-icon choose">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="step-content">
@@ -193,16 +288,7 @@
                             </div>
                         </div>
                         <div class="step">
-                            <div class="step-icon red">
-                                <i class="fas fa-car"></i>
-                            </div>
-                            <div class="step-content">
-                                <h4>Reach Airport on Selected Date</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
-                            </div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon blue">
+                            <div class="step-icon payment">
                                 <i class="fas fa-credit-card"></i>
                             </div>
                             <div class="step-content">
@@ -210,13 +296,24 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
                             </div>
                         </div>
+                        <div class="step">
+                            <div class="step-icon airport">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>Reach Airport on Selected Date</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="book-trip-cards">
-                    <div class="trip-card featured">
-                        <img src="images/trip-greece.jpg" alt="Trip to Greece" class="trip-image">
-                        <div class="trip-details">
-                            <h4>Trip To Greece</h4>
+                <div class="book-trip-visual">
+                    <div class="trip-card main-card">
+                        <div class="trip-image">
+                            <img src="images/trip-greece.jpg" alt="Trip to Greece">
+                        </div>
+                        <div class="trip-info">
+                            <h3>Trip To Greece</h3>
                             <p class="trip-date">14-29 June | by Robbin joseph</p>
                             <div class="trip-options">
                                 <div class="option">
@@ -229,30 +326,28 @@
                                     <i class="fas fa-paper-plane"></i>
                                 </div>
                             </div>
-                            <div class="trip-footer">
-                                <div class="trip-attendees">
-                                    <i class="fas fa-users"></i>
-                                    <span>24 people going</span>
+                            <div class="trip-stats">
+                                <div class="building-icon">
+                                    <i class="fas fa-building"></i>
                                 </div>
-                                <i class="fas fa-heart trip-favorite"></i>
+                                <span>24 people going</span>
+                                <div class="heart-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>                    <div class="trip-card ongoing">
-                        <div class="ongoing-header">
-                            <svg class="user-avatar" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="30" cy="30" r="30" fill="#E8F4FD"/>
-                                <circle cx="30" cy="22" r="10" fill="#4285F4"/>
-                                <path d="M30 35C20 35 12 41 12 48V52C12 55.3137 14.6863 58 18 58H42C45.3137 58 48 55.3137 48 52V48C48 41 40 35 30 35Z" fill="#4285F4"/>
-                            </svg>
-                            <div class="ongoing-info">
-                                <h5>Trip to Rome</h5>
+                    </div>
+                    <div class="trip-card side-card">
+                        <div class="trip-preview">
+                            <img src="images/trip-rome.jpg" alt="Trip to Rome" class="trip-thumb">
+                            <div class="trip-details">
+                                <h4>Trip to Rome</h4>
                                 <p>40% completed</p>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 40%"></div>
+                                    <div class="progress" style="width: 40%;"></div>
                                 </div>
                             </div>
                         </div>
-                        <span class="ongoing-badge">Ongoing</span>
                     </div>
                 </div>
             </div>
@@ -260,7 +355,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials">
         <div class="container">
             <div class="testimonials-content">
                 <div class="testimonials-text">
@@ -273,15 +368,15 @@
                     </div>
                 </div>
                 <div class="testimonials-cards">
-                    <div class="testimonial-card active">
+                    <div class="testimonial-card main">
                         <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
                         <div class="testimonial-author">
                             <strong>Mike taylor</strong>
                             <span>Lahore, Pakistan</span>
                         </div>
+                        <img src="images/testimonial-user.jpg" alt="Mike Taylor" class="testimonial-avatar">
                     </div>
-                    <div class="testimonial-card">
-                        <img src="images/testimonial-user.jpg" alt="Chris Thomas" class="testimonial-avatar">
+                    <div class="testimonial-card side">
                         <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
                         <div class="testimonial-author">
                             <strong>Chris Thomas</strong>
@@ -289,8 +384,12 @@
                         </div>
                     </div>
                     <div class="testimonial-navigation">
-                        <button class="nav-btn prev"><i class="fas fa-chevron-up"></i></button>
-                        <button class="nav-btn next"><i class="fas fa-chevron-down"></i></button>
+                        <button class="nav-btn up">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <button class="nav-btn down active">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -301,47 +400,51 @@
     <section class="logos">
         <div class="container">
             <div class="logos-grid">
-                <img src="images/logo1.png" alt="Partner Logo" class="partner-logo">
-                <img src="images/logo2.png" alt="Partner Logo" class="partner-logo">
-                <img src="images/logo3.png" alt="Partner Logo" class="partner-logo featured">
-                <img src="images/logo4.png" alt="Partner Logo" class="partner-logo">
-                <img src="images/logo5.png" alt="Partner Logo" class="partner-logo">
+                <img src="images/logo1.png" alt="Partner Logo">
+                <img src="images/logo2.png" alt="Partner Logo">
+                <div class="logo-highlight">
+                    <img src="images/logo3.png" alt="Partner Logo">
+                </div>
+                <img src="images/logo4.png" alt="Partner Logo">
+                <img src="images/logo5.png" alt="Partner Logo">
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="newsletter-decoration">
+    <!-- Subscribe Section -->
+    <section class="subscribe">
+        <div class="subscribe-decoration">
             <div class="plus-pattern">
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
-                <div class="plus">+</div>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus highlight">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus accent">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
+                <span class="plus">+</span>
             </div>
         </div>
         <div class="container">
-            <div class="newsletter-content">
+            <div class="subscribe-content">
                 <h2>Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
-                <div class="newsletter-form">
+                <div class="subscribe-form">
                     <div class="email-input">
-                        <i class="fas fa-envelope"></i>
                         <input type="email" placeholder="Your email">
                     </div>
                     <button class="subscribe-btn">Subscribe</button>
+                </div>
+                <div class="send-icon">
+                    <i class="fas fa-paper-plane"></i>
                 </div>
             </div>
         </div>
@@ -356,7 +459,7 @@
                     <p>Book your trip in minute, get full Control for much longer.</p>
                 </div>
                 <div class="footer-links">
-                    <div class="footer-column">
+                    <div class="link-column">
                         <h4>Company</h4>
                         <ul>
                             <li><a href="#">About</a></li>
@@ -364,7 +467,7 @@
                             <li><a href="#">Mobile</a></li>
                         </ul>
                     </div>
-                    <div class="footer-column">
+                    <div class="link-column">
                         <h4>Contact</h4>
                         <ul>
                             <li><a href="#">Help/FAQ</a></li>
@@ -372,7 +475,7 @@
                             <li><a href="#">Affilates</a></li>
                         </ul>
                     </div>
-                    <div class="footer-column">
+                    <div class="link-column">
                         <h4>More</h4>
                         <ul>
                             <li><a href="#">Airlinefees</a></li>
@@ -385,12 +488,10 @@
                     <h4>Discover our app</h4>
                     <div class="app-buttons">
                         <a href="#" class="app-btn">
-                            <i class="fab fa-google-play"></i>
-                            <span>Google Play</span>
+                            <img src="images/google-play.png" alt="Google Play">
                         </a>
                         <a href="#" class="app-btn">
-                            <i class="fab fa-apple"></i>
-                            <span>Play Store</span>
+                            <img src="images/app-store.png" alt="App Store">
                         </a>
                     </div>
                     <div class="social-links">
